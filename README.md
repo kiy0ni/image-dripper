@@ -56,7 +56,7 @@ Les contributions sont ce qui fait de la communauté open source un endroit incr
 
 SoImKiyo - [@SoImKiyo](https://www.youtube.com/@Kiyo-Oni) - sacha.pastor@protonmail.com
 
-Lien du projet : [https://github.com/SoImKiyo1/ImageDripper](https://github.com/kiy0ni/image-dripper)
+Lien du projet : [https://github.com/SoImKiyo1/image-dripper](https://github.com/kiy0ni/image-dripper)
 
 ## Contributeur
 
