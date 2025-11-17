@@ -21,7 +21,7 @@ Pour exécuter le logiciel via le code source, vous aurez besoin de Python insta
 1. Clonez le dépôt :
 
     ```sh
-    git clone https://github.com/SoImKiyo1/ImageDripper.git
+    git clone https://github.com/kiy0ni/image-dripper.git
     ```
 
 2. Installez les dépendances nécessaires :
