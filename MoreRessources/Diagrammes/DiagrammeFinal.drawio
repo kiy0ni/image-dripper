@@ -1,0 +1,244 @@
+<mxfile host="app.diagrams.net" modified="2024-02-15T08:23:00.222Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="37nHqVPjxYjM7KOzmdBP" version="23.1.4" type="device">
+  <diagram name="Page-1" id="vfGMUqw6DaAGaZKLnIu0">
+    <mxGraphModel dx="1354" dy="1747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rd8rbch0IybKlO5kmHsC-23" value="Ouverture de l&#39;image choisie" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-1054" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-24" value="Lecture des dimensions H et L de l&#39;image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-974" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-23" target="rd8rbch0IybKlO5kmHsC-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="323.5" y="-1004" as="sourcePoint" />
+            <mxPoint x="323.5" y="-974" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-26" value="Création d&#39;une seconde image vide de même largeur et de (1+ 2 x M) % de la hauteur de l&#39;image d&#39;origine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-894" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-24" target="rd8rbch0IybKlO5kmHsC-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-804" as="sourcePoint" />
+            <mxPoint x="624" y="-854" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-28" value="Pour chaque colonne x" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-794" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-26" target="rd8rbch0IybKlO5kmHsC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-804" as="sourcePoint" />
+            <mxPoint x="624" y="-854" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-30" value="Définition d&#39;un nombre aléatoire compris entre -M et M% de la hauteur de l&#39;image d&#39;origine dans la variable N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="-714" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-28" target="rd8rbch0IybKlO5kmHsC-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-804" as="sourcePoint" />
+            <mxPoint x="624" y="-854" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-32" value="Pour chaque ligne y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="-614" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-30" target="rd8rbch0IybKlO5kmHsC-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-704" as="sourcePoint" />
+            <mxPoint x="624" y="-754" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-35" target="rd8rbch0IybKlO5kmHsC-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-35" value="Récupération des composantes RVB du pixel dans les variables r, v et b&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="-454" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-36" value="Récupération du pixel x : y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="-534" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-32" target="rd8rbch0IybKlO5kmHsC-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-664" as="sourcePoint" />
+            <mxPoint x="624" y="-714" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-36" target="rd8rbch0IybKlO5kmHsC-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-664" as="sourcePoint" />
+            <mxPoint x="624" y="-714" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-39" value="Enregistrement des valeurs RVB dans le pixel de coordonnée&lt;br&gt;&amp;nbsp;x : (1 + M)H + N + y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="-374" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-40" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="rd8rbch0IybKlO5kmHsC-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="294" y="-574" as="sourcePoint" />
+            <mxPoint x="624" y="-514" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="294" y="-274" />
+              <mxPoint x="564" y="-274" />
+              <mxPoint x="564" y="-594" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-28" target="rd8rbch0IybKlO5kmHsC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="154" y="-644" as="sourcePoint" />
+            <mxPoint x="694" y="-224" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="244" y="-234" />
+              <mxPoint x="604" y="-234" />
+              <mxPoint x="604" y="-774" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-28" target="rd8rbch0IybKlO5kmHsC-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="-454" as="sourcePoint" />
+            <mxPoint x="224" y="-234" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-43" value="Enregistrement de l&#39;image 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-174" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-44" value="La variable M correspond à la force de l&#39;effet ( valeur comprise entre 0 et 0,4" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-1134" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-45" target="rd8rbch0IybKlO5kmHsC-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-45" value="Rognage des marges hautes et basses de l&#39;image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="-94" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-46" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-43" target="rd8rbch0IybKlO5kmHsC-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="824" y="-214" as="sourcePoint" />
+            <mxPoint x="824" y="-174" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-48" value="Lecture des dimensions H et L de l&#39;image qui vient d&#39;être créée" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-50" value="Création d&#39;une seconde image vide de même hauteur et de (1+ 2 x M) % de la largeur de l&#39;image d&#39;origine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-48" target="rd8rbch0IybKlO5kmHsC-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="250" as="sourcePoint" />
+            <mxPoint x="624" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-52" value="Pour chaque ligne y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="260" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-53" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-50" target="rd8rbch0IybKlO5kmHsC-52">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="250" as="sourcePoint" />
+            <mxPoint x="624" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-54" value="Définition d&#39;un nombre aléatoire compris entre -M et M% de la largeur de l&#39;image d&#39;origine dans la variable N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="340" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-52" target="rd8rbch0IybKlO5kmHsC-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="250" as="sourcePoint" />
+            <mxPoint x="624" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-56" value="Pour chaque colonne x" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="440" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-57" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-54" target="rd8rbch0IybKlO5kmHsC-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="350" as="sourcePoint" />
+            <mxPoint x="624" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-59" target="rd8rbch0IybKlO5kmHsC-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-59" value="Récupération des composantes RVB du pixel dans les variables r, v et b&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="600" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-60" value="Récupération du pixel x : y" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="520" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-56" target="rd8rbch0IybKlO5kmHsC-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="390" as="sourcePoint" />
+            <mxPoint x="624" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-62" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-60" target="rd8rbch0IybKlO5kmHsC-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="390" as="sourcePoint" />
+            <mxPoint x="624" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-63" value="Enregistrement des valeurs RVB dans le pixel de coordonnée&lt;br&gt;&amp;nbsp;(1 + M)H + N + x : y&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="680" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-64" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="rd8rbch0IybKlO5kmHsC-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="294" y="480" as="sourcePoint" />
+            <mxPoint x="624" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="294" y="780" />
+              <mxPoint x="564" y="780" />
+              <mxPoint x="564" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-65" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-52" target="rd8rbch0IybKlO5kmHsC-52">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="154" y="410" as="sourcePoint" />
+            <mxPoint x="694" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="244" y="820" />
+              <mxPoint x="604" y="820" />
+              <mxPoint x="604" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-66" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-52" target="rd8rbch0IybKlO5kmHsC-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="574" y="600" as="sourcePoint" />
+            <mxPoint x="224" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="224" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-67" value="Enregistrement de l&#39;image 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="866" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-70" value="Rognage des marges droites et gauches de l&#39;image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="946" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-72" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-67" target="rd8rbch0IybKlO5kmHsC-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="876" as="sourcePoint" />
+            <mxPoint x="324" y="946" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-73" value="Enregistrement de l&#39;image finale avec les deux effets appliqués" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1040" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rd8rbch0IybKlO5kmHsC-74" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rd8rbch0IybKlO5kmHsC-70" target="rd8rbch0IybKlO5kmHsC-73">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="980" as="sourcePoint" />
+            <mxPoint x="330" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
